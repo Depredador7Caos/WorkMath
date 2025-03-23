@@ -12,7 +12,9 @@
                 <a href="?url=addDataFiles">Registrarse</a>
             </button>
 
-            <button class="btn btn-md btn-thrid col-10">Ya tengo una cuenta</button>
+            <button class="btn btn-md btn-thrid col-10">
+                <a href="?url=inicioDeSession">Ya tengo una cuenta</a>
+            </button>
         </div>
     </div>
 </section>

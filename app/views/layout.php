@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <?php isset($title) ? $title : "Manejo de plantillas"; ?> </title>
 
+    <!-- ACCESO A STYLES PERZONALIZADOS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- ACCESO A BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ACCESO A FONTS 'ROBOTO' GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -31,7 +38,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="?url=cursosDisponibles">Cursos Disponibles</a>
+                        <a class="nav-link active" aria-current="page" href="?url=cursosDisponibles">Cursos
+                            Disponibles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="?url=clientes">Clientes</a>
@@ -52,7 +60,7 @@
         <aside class="main-lateral">
             <div class="navbar-lateral">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a href="?url=addDataFiles"> agregar archivos </a></li>
+                    <li class="nav-item"><a href="#"> opc-1 </a></li>
                     <li class="nav-item">opc-2</li>
                     <li class="nav-item">opc-3</li>
                     <li class="nav-item">opc-4</li>

@@ -1,9 +1,22 @@
+/* 
+------PISTAS PARA LLEGAR MAS RAPIDO AL STYLE-------
+
+
+INICIO DE STYLES DE FORMULARIOS DINAMICOS 
+
+
+
+*/
+
+
+
 :root {
     --color-white: #ffffff;
     --color-balck: #000000;
     --color-primary: #5b21b6;
     --color-secondary: #f59e0b;
     --color-thrid: #fbbf24;
+    --color-pink: #f59e;
 }
 
 * {
@@ -138,6 +151,7 @@ body {
     text-align: center;
     border-radius: 5px;
     transition: 0.3s all ease;
+    font-size: 1rem;
 }
 
 
@@ -174,14 +188,21 @@ body {
 .btn-secondary {
     background-color: var(--color-secondary);
     color: var(--color-black);
-    font-weight: 500;
+    font-weight: 600;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4), 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .btn-thrid {
     background-color: var(--color-thrid);
     color: var(--color-white);
-    font-weight: 500;
+    font-weight: 600;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4), 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn-easy {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    font-weight: 600;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4), 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -224,6 +245,13 @@ body {
 .btn-push-primary:active {
     box-shadow: none;
 
+}
+
+.btn-easy-push:hover {
+    background-color: #f59e0b;
+    color: #5b21b6;
+    opacity: 1.1;
+    transform: perspective(100px)rotateX(5deg)scale(1.05);
 }
 
 .btn-hover-push-primary:hover{
@@ -311,7 +339,7 @@ body {
     height: 3rem;
 }
 
-/* Formularios dinamicos */
+/* INICIO DE STYLES DE FORMULARIOS DINAMICOS */
 
 .form-group{
     width: auto;
@@ -362,7 +390,6 @@ body {
     display: flex;
 
 }
-
 input[type=text]:focus,
 input[type=number]:focus,
 input[type=password]:focus,
@@ -387,6 +414,106 @@ input[type=email]:focus {
     }
     
 }
+
+/*FORMULARIOS DIMANICOS => INICIO DE SESSION*/
+.content-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-form > .form-inicio {
+    width: 400px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px rgba(255, 85, 153, 0.933);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+
+.content-form > .form-inicio > .form-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    height: 15%;
+}
+
+.content-form > .form-inicio > .form-title > .title {
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+}
+
+.content-form > .form-inicio > .form-data {
+    padding: 0.5rem;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-form > .form-inicio > .form-data > .form-inicio-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0.5rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.content-form > .form-inicio > .form-data > .form-inicio-box > .label-control{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.2rem;
+}
+
+.content-form > .form-inicio > .form-data > .form-inicio-box > .group-control {
+    width: inherit;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5rem 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content-form > .form-inicio > .form-data > .form-inicio-box > .group-control .label-icon-control{
+    height: inherit;
+    width: 15%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    border: 1px solid #f59e;
+}
+
+.content-form > .form-inicio > .form-data > .form-inicio-box > .group-control .label-icon-control > .icon-control {
+    font-size: 1.5rem;
+    color: #f59e;
+}
+
+.content-form > .form-inicio > .form-data > .form-inicio-box > .group-control > .input-control {
+    width: 85%;
+    height: inherit;
+    outline: none;
+    padding: 0 0.5rem;
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    border: 1px solid #f59e;
+}
+
+.content-form > .form-inicio > .form-data > .button-control {
+    margin: 1rem 1rem;
+    height: 2.5rem;
+}
+
+/** LIMITE DE STYLES DE FORMULARIOS **/
+
 
 .card-img {
     display: flex;
@@ -427,7 +554,6 @@ input[type=email]:focus {
     justify-content: center;
     align-items: center;
     line-height: 3;
-    border: 1px solid var(--color-white);
     border-radius: inherit;
     color: var(--color-white);
 }

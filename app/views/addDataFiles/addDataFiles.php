@@ -72,7 +72,7 @@
 
             <div class="card-center-buttom col-6 m-1 ">
                 <button class="btn btn-md btn-return">
-                    <a href="?url=clientes">
+                    <a href="?url=inicioDeSession">
                         <i class='bx bx-save'></i>
                         Cargar Datos
                     </a>
